@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Delicious</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Raleway:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body class="clearfix">
+<!-- ---- HEADER ---- -->
+    <header>
+        <div class="wrapper">
+            <div class="navBar clearfix">
+                <div class="logo">
+                    <h1>Delicious</h1>
+                </div>
+                <div class="shoppingBag"></div>
+                <div class="two">
+                    <p>2</p>
+                </div>
+                <nav>
+                    <ul class="clearfix">
+                        <li><a href="index.html">Home</a></li>
+                        <li>About</li>
+                        <li>Recipes</li>
+                        <li>Nutrition</li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li>Shop</li>
+                        <li>Contact</li>
+                        <li><i class="fas fa-shopping-bag"></i></li>
+                        <li><i class="fas fa-search"></i></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>  <!-- WRAPPER CLOSE -->
+    </header>
+<!-- ---- DROP US A LINE ---- -->
+<div class="contentWrapper clearfix">
+    <section class="contactForm clearfix" id="contactForm">
+        <div class="formWrapper">
+            <h2>Drop us a line</h2>
+            <div class="form clearfix">
+                <form action="sendEmail.php" method="GET" class="writeUs" autocomplete="off" name="writeUs">
+        
+                    <label class="visuallyhidden" for="fullName">Your Name</label>
+                    <input type="text" class="fullName" name="fullName" placeholder="Your Name">
+        
+                    <label class="visuallyhidden" for="email">Your Email</label>
+                    <input type="email" class="email" name="email" placeholder="Your Email">
+        
+                    <label class="visuallyhidden" for="subject">Subject</label>
+                    <input type="text" class="subject" name="subject" placeholder="Subject">
+        
+                    <label class="visuallyhidden" for="message">Message</label>
+                    <input type="text" class="message" name="message" placeholder="Message">
+        
+                    <button class="submit">Send Message <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+        
+                </form>
+            </div>
+        </div>
+    </section>
+<!-- ---- ASIDE - CONTACT DETAILS ---- -->
+    <aside class="contactDetails">
+        <div class="wrapper">
+            <h2>Contact Details</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsam harum perferendis molestias.
+            </p>
+            <h3>Working Hours</h3>
+            <ul class="hours">
+                <li><span id="weekdays">Mon - Fri :</span> 08:00am - 05:30pm</li>
+                <li><span id="weekends">Not working on Saturday and Sunday!</span></li>
+            </ul>
+            <h3>Contact Info</h3>
+            <ul class="phone">
+                <li>A delicious restaurant</li>
+                <li>Toronto, Ontario</li>
+                <li><a href="mailto:yum@food.com">yum@food.com</a></li>
+                <li>+1 234-567-8910</li>
+            </ul>
+        </div>
+    </aside>
+</div>
+<!-- ---- FOOTER ---- -->
+    <footer>
+        <div class="wrapper clearfix">
+            <section class="column one">
+                <h2>Delicious</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam impedit similique dicta.</p>
+                <p>A delicious restaurant</p>
+                <p>Toronto, Ontario</p>
+                <p>yum@food.com</p>
+                <p>+1 234 5678</p>
+            </section>
+            <section class="column two">
+                <h3>Recent Posts</h3>
+                <p>Beetroot spinach okra carrot</p>
+                <p>Chestnut rice courgette falafel</p>
+                <p>Summer purslane arugula salad</p>
+                <p>Aubergine spring onion frittata</p>
+                <p>Tomato radicchio cilantro salsa</p>
+                <p>Salsify sprouts fava bean dip</p>
+            </section>
+            <section class="column three">
+                <h3>Subscribe Now</h3>
+                <p>Get all of our newest recipes immediately in your inbox!</p>
+                <div class="subscribe clearfix">
+                
+                    <form action="sendEmail.php" method="POST" class="write-us clearfix" autocomplete="off" name="write-us">
+                
+                        <label label class="visuallyhidden" for="email">Enter your email</label>
+                        <input type="email" class="email" name="email" placeholder="Enter your email">
+                
+                        <button class="submit">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </button>
+                    </form>
+                </div>
+                <ul class="socialMedia clearfix">
+                    <li><a href="http://www.facebook.com" target="_blank">
+                        <i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href="http://www.twitter.com" target="_blank">
+                        <i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li><a href="http://www.instagram.com" target="_blank">
+                        <i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+            <section class="copyright">
+                <div class="copyrightWrapper">
+                    <p>Copyright <i class="far fa-copyright"></i> 2015 by <span>Polar</span>. All rights reserved.</p>
+                </div>
+            </section>
+    </footer>
+</body>
+</html>

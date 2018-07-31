@@ -1,0 +1,435 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyhidden:not(:focus):not(:active) {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          border: 0;
+          padding: 0;
+          white-space: nowrap;
+          clip-path: inset(100%);
+          clip: rect(0 0 0 0);
+          overflow: hidden;
+}
+/* --------------------------------------- */
+
+html {
+    font-size: 62.5%;
+    margin: 0;
+}
+body {
+    font-size: 1.8rem;
+}
+header .wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ------- COMMON STYLES ------- */
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 2.8rem;
+    margin: 0;
+    padding: 25px 0 0 50px; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* border: 1px solid red; */
+}
+h2 { font-size: 2.6rem; }
+h3 { font-size: 2rem; }
+h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+p {
+   font-family: 'Lora', serif; 
+   font-size: 1.7rem;
+}
+img {
+    width: 100%;
+}
+.underline {
+    width: 100px;
+    margin: 0 auto;
+    border-bottom: 3px solid #64a604;
+}
+/* ------- HEADER ------- */
+header {
+    height: 100vh;
+    background-image: url(../assets/home-1.jpeg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+}
+/* NAV BAR */
+.navBar .logo {
+    float: left;
+    width: 20%;
+    /* border: 1px solid red; */
+}
+.navBar nav {
+    float: left;
+    width: 80%;
+    position: relative;
+}
+.navBar ul {
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding-left: 300px;
+}
+.navBar ul li {
+    float: left;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 30px 30px 0 0;
+}
+.navBar ul li a:visited {
+    color: black;
+}
+.navBar ul li:hover, .navBar ul li a:hover {
+    color: #64a604;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.navBar ul li a {
+    text-decoration: none;
+}
+.navBar ul li:first-child {
+    color: #64a604;
+}
+.navBar .shoppingBag {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #64a604;
+    z-index: 10;
+
+    position: absolute;
+    top: 43px;
+    right: 125px;
+}
+.navBar .two {
+    position: absolute;
+    top: 40px;
+    right: 129px;
+    z-index: 20;
+}
+.navBar .two p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+/* ------- MENU ------- */
+.menu .wrapper {
+    position: relative;
+}
+.menu .leftSide, .menu .rightSide {
+    float: left;
+    width: 50%;
+}
+.menu .rightSide {
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.menu .rightSide ul {
+    padding: 60px;
+    text-indent: -10px;
+}
+.menu .rightSide ul li {
+    float: left;
+    width: calc(50% - 60px);
+    margin: 30px 30px 30px 0;
+}
+.menu .rightSide ul li h3 {
+    color: #999999;
+    margin: 0;
+    padding-bottom: 5px;
+}
+.menu .rightSide ul li p {
+    color: #999999;
+    margin: 0;
+    font-size: 1.4rem;
+}
+.item .icon, .item .content {
+    float: left;
+}
+.fa-ul li i {
+    font-size: 2.8rem;
+    margin-right: 25px;
+    color: #333333;
+}
+
+/* ------- RECIPES ------- */
+.recipes .leftSide, .recipes .rightSide {
+    width: 50%;
+    float: left;
+    margin: 0;
+}
+.leftSide img, .rightSide img {
+    display: block;
+}
+.recipes .leftSide {
+    text-align: center;
+    padding: 150px 100px 0 100px;
+    /* padding-top: 100px; */
+}
+.recipes .leftSide h2 {
+    padding-bottom: 20px;
+}
+.recipes button {
+    width: 200px;
+    padding: 20px 0;
+    background-color: #64a604;
+    border: 1px solid #64a604;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+}
+.recipes button:hover {
+    background-color: forestgreen;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+/* ------- LOCATIONS ------- */
+.locations .images {
+    width: 550px;
+    margin: 0 auto;
+    position: relative;
+}
+.locations .tables {
+    width: 550px;
+    margin: 0 auto;
+}
+.locations .overlay {
+    position: absolute;
+    top: 62px;
+    right: -110px;
+}
+.locations .tables img {
+        padding: 150px 0 50px;
+}
+.locations .overlay img {
+    width: 75%;
+}
+.locations .content p,
+.locations .content h2 {
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.locations .content p {
+    padding: 20px 0 100px 0;
+}
+/* ------- GALLERY ------- */
+.gallery {
+    width: 100%;
+}
+.gallery img {
+    width: 33.3%;
+    float: left;
+}
+/* ------- QUOTE ------- */
+.quote {
+    background-color: #dded9a;
+}
+.quote .wrapper {
+    width: 70%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+.quote h2,
+.quote blockquote 
+.quote ul {
+    text-align: center;
+}
+.quote h2 {
+    padding: 150px 0 20px;
+}
+.quote blockquote {
+    position: relative;
+    font-family: 'Lora', serif; 
+    text-align: center;
+    font-size: 2rem;
+}
+.quote blockquote::before {
+    content: '“';
+    font-family: sans-serif;
+    color: white;
+    font-size: 8rem;
+    position: absolute;
+    top: -6px;
+    left: -35px;
+}
+.quote blockquote::after {
+    content: '”';
+    font-family: sans-serif;
+    color: white;
+    font-size: 8rem;
+    position: absolute;
+    right: -40px;
+}
+.quote p {
+    text-align: right;
+    margin: 0;
+    font-style: italic;
+    padding-right: 115px;
+    /* border: 1px solid red; */
+}
+.quote .arrows {
+    padding-left: 475px;
+}
+.quote .arrows ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 150px 0;
+    /* border: 1px solid red; */
+}
+.quote .arrows li {
+    color: white;
+    float: left;
+    padding: 0 10px;
+    /* border: 1px solid red; */
+}
+/* ------- FOOTER ------- */
+footer {
+    background-color: #2e2e2e;
+    clear: both;
+}
+footer .wrapper {
+    width: 70%;
+    margin: 0 auto; 
+    background-color: #2e2e2e;
+    padding: 100px 0 60px;
+    /* border: 1px solid red; */
+}
+footer .column.one h2 {
+    color: #64a604;
+    font-size: 2.8rem;
+}
+footer .column {
+    float: left;
+    /* border: 1px solid red; */
+}
+footer .column.one, footer .column.two {
+    width: calc(33.3% - 70px);
+    margin-right: 70px;
+}
+footer .column.three {
+    width: 30%;
+}
+footer .column h3,
+footer .column p {
+    color: #999999;
+}
+footer .column h3 {
+    padding-bottom: 30px;
+}
+footer .column p {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #474747;
+}
+footer .column .three ul {
+    list-style-type: none;
+}
+
+footer .column.three .subscribe {
+    width: 100%;
+}     
+footer .column.three .email {
+    width: 85%;
+    height: 40px;
+    margin: 0;
+    padding-left: 20px;
+    color: #999999;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    background-color: #535353;
+    float: left;
+}
+footer .column.three input[type=email] {
+    width: 85%;
+    height: 40px;
+    margin: 0;
+    padding-left: 2% 5%;
+    border: none;
+}
+footer .column.three .submit {
+    width: 15%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    background-color: #64a604;
+    float: right;
+}
+footer .column.three .submit:hover {
+    background-color: green;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+footer .column.three p {
+    border: none;
+}
+footer .column.three .socialMedia {
+    list-style-type: none;
+    padding: 0;
+    border-top: 1px solid #474747;
+}
+footer .column.three .socialMedia li {
+    float: left;
+    margin: 0;
+    padding: 20px 40px 0 0;
+    color: white;
+}
+footer .column.three .socialMedia li a {
+    text-decoration: none;
+    color: white;
+}
+footer .column.three .socialMedia li a:hover {
+    color: #64a604;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+footer .copyright {
+    background-color: #252525;
+    clear: both;
+}
+footer .copyrightWrapper {
+    width: 70%;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #252525;
+}
+footer .copyright p {
+    font-family: 'Raleway', sans-serif;
+    color: #999999;
+    padding: 20px 20px 20px 0;
+}
+footer .copyright p span {
+    text-transform: uppercase;
+    color: #64a604;
+}
